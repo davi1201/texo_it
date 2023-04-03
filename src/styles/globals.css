@@ -41,6 +41,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .active {
+    background: #25262b;
+  }
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -87,12 +90,6 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 a {
@@ -101,7 +98,11 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  .active {
+    background: #25262b;
   }
+}
+
+.error-class{
+  position: absolute;
 }
